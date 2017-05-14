@@ -1,0 +1,6 @@
+[submodule "cbrain/ZheQuant-brain-cpp"]
+	path = cbrain/ZheQuant-brain-cpp
+	url = https://github.com/feng-zhe/ZheQuant-brain-cpp.git
+[submodule "webserver/ZheQuant-webserver-backend"]
+	path = webserver/ZheQuant-webserver-backend
+	url = https://github.com/feng-zhe/ZheQuant-webserver-backend.git

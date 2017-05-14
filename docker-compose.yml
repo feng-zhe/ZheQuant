@@ -1,0 +1,33 @@
+version: "3"
+services:
+    db:
+        build: ./db/
+        image: db
+        command: --auth
+        volumes:
+            - ./data/mongodb/data/db/:/data/db/
+            - ./data/mongodb/data/configdb/:/data/mongodb/data/configdb/
+        networks:
+            - mynetwork
+    rabbitmq:
+        image: rabbitmq:3.6.6
+        hostname: myhostname
+        volumes:
+            - ./data/rabbitmq:/var/lib/rabbitmq
+        networks:
+            - mynetwork
+    webserver:
+        build: ./webserver
+        image: webserver
+        ports:
+            - "3000:3000"
+        networks:
+            - mynetwork
+    cbrain:
+        build: ./cbrain
+        image: cbrain
+        networks:
+            - mynetwork
+
+networks:
+    mynetwork:

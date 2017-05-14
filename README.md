@@ -2,4 +2,13 @@
 A framework to help build analysing system
 
 ## Notice
-Currently developing, mainly because I have to remove the private and secrete parts before making it public. 
+This project is under developing. The images can be built sucessfully now but cannot run correctly.
+But sorry I have to finish picoCTF2017 first :)
+
+TODO:
+- create a script to insert test data and user into databse
+- find out why cbrain component will error
+
+## Usage
+(TODO)
+Please remember to use `git submodule update --init --recursive` to download submodules
