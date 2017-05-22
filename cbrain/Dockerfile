@@ -41,6 +41,8 @@ RUN cmake -DCMAKE_BUILD_TYPE=Release -DBSONCXX_POLY_USE_MNMLSTC=1 -DCMAKE_INSTAL
     && make \
     && make install
 # build and run the cbrain
+# add this env because needed when running
+ENV LD_LIBRARY_PATH /usr/local/
 COPY ZheQuant-brain-cpp/ /projects/ZheQuant-brain-cpp/
 WORKDIR /projects/ZheQuant-brain-cpp/build/
 RUN cmake .. && make
