@@ -2,8 +2,8 @@ version: "3"
 services:
     db:
         build: ./db/
-        image: db
-        command: --auth
+        image: zhequant-db
+        #command: --auth # currently do not use authentication
         volumes:
             - ./data/mongodb/data/db/:/data/db/
             - ./data/mongodb/data/configdb/:/data/mongodb/data/configdb/
@@ -18,14 +18,19 @@ services:
             - mynetwork
     webserver:
         build: ./webserver
-        image: webserver
+        image: zhequant-webserver-backend
         ports:
             - "3000:3000"
         networks:
             - mynetwork
     cbrain:
         build: ./cbrain
-        image: cbrain
+        image: zhequant-brain-cpp
+        networks:
+            - mynetwork
+    admin:
+        build: ./admin
+        image: zhequant-admin-console
         networks:
             - mynetwork
 

@@ -4,3 +4,6 @@
 [submodule "webserver/ZheQuant-webserver-backend"]
 	path = webserver/ZheQuant-webserver-backend
 	url = https://github.com/feng-zhe/ZheQuant-webserver-backend.git
+[submodule "admin/ZheQuant-admin-console"]
+	path = admin/ZheQuant-admin-console
+	url = https://github.com/feng-zhe/ZheQuant-admin-console.git
