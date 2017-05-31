@@ -8,7 +8,7 @@ RUN apt-get install -y \
         git
 COPY ZheQuant-admin-console/ /root/admin/
 WORKDIR /root/admin/
-RUN python3 -m venv venv
-# source is not a valid command in Dockerfile RUN
-RUN /bin/bash -c "source venv/bin/activate && pip install -r requirements.txt && ./main.py -g test_data"
+RUN ln -s /usr/bin/python3 /usr/local/bin/python && \
+    ln -s /usr/bin/pip3 /usr/local/bin/pip && \
+    pip install -r requirements.txt
 CMD ["echo","hello"]
