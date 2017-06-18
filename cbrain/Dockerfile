@@ -44,4 +44,4 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 COPY ZheQuant-brain-cpp/ /projects/ZheQuant-brain-cpp/
 WORKDIR /projects/ZheQuant-brain-cpp/build/
 RUN cmake .. && make
-CMD ["./cbrain"]
+CMD ["/bin/sh","-c","./cbrain > logs"]

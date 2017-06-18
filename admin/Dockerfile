@@ -8,7 +8,8 @@ RUN apt-get install -y \
         git
 COPY ZheQuant-admin-console/ /root/admin/
 WORKDIR /root/admin/
-RUN ln -s /usr/bin/python3 /usr/local/bin/python && \
-    ln -s /usr/bin/pip3 /usr/local/bin/pip && \
-    pip install -r requirements.txt
+RUN ln -s /usr/bin/python3 /usr/bin/python && \
+    ln -s /usr/bin/pip3 /usr/bin/pip && \
+    pip install -r requirements.txt && \
+    chmod +x main.py
 CMD ["echo","hello"]
