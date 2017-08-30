@@ -4,3 +4,6 @@
 [submodule "admin/ZheQuant-admin-console"]
 	path = admin/ZheQuant-admin-console
 	url = https://github.com/feng-zhe/ZheQuant-admin-console.git
+[submodule "pbrain/ZheQuant-brain-python"]
+	path = pbrain/ZheQuant-brain-python
+	url = git@github.com:feng-zhe/ZheQuant-brain-python.git

@@ -23,9 +23,9 @@ services:
             - "3000:3000"
         networks:
             - mynetwork
-    cbrain:
-        build: ./cbrain
-        image: zhequant-brain-cpp
+    pbrain:
+        build: ./pbrain
+        image: zhequant-brain-python
         networks:
             - mynetwork
     admin:
