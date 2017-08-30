@@ -6,4 +6,5 @@ RUN apt-get install -y \
     python3
 COPY ZheQuant-brain-python /project/pbrain/
 WORKDIR /project/pbrain/
-CMD ["/bin/sh","-c","python3 pbrain.py"]
+RUN pip3 install -r requirements.txt
+CMD ["/bin/sh","-c","python3 main.py"]
