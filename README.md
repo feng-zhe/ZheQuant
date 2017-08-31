@@ -14,6 +14,16 @@ TODO:
 ## Usage
 Please remember to use `git submodule update --init --recursive` to download submodules.
 
+## Structs
+### job-todo message
+{
+    name: job_name,
+    creator: userId,
+    create_date: new Date(),
+    status: 'waiting',
+    description: description,
+    cmd: cmd
+}
 
 ## FAQ
 - Q: Why not adding a git clone command line in Dockerfile to download ZheQuant components, instead of being git submodules into this repository?
