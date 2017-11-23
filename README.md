@@ -5,10 +5,6 @@ A framework to help build analysing system
 This project is under developing.
 
 TODO:
-- create a new component 'ZheQuant-admin-console' to
-    - insert test data and user into databse
-    - report status (runtime statistics, health check ...)
-    - other manage&console tasks
 - write documentation for this project and each component
 
 ## Usage
