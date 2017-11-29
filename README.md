@@ -25,6 +25,7 @@ Please remember to use `git submodule update --init --recursive` to download sub
     - code
     - date
     - volume
+    - open
     - close
     - high
     - low
