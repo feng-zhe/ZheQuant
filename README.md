@@ -22,6 +22,13 @@ Please remember to use `git submodule update --init --recursive` to download sub
 
 ### Database in mongodb
 - stocks
+    - code
+    - date
+    - volume
+    - open
+    - close
+    - high
+    - low
 - users
 - jobs-result
     - _id: the document_id
