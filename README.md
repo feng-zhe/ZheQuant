@@ -2,13 +2,25 @@
 A framework to help build analysing system
 
 ## Notice
-This project is under developing.
+This project is under developing. 
+
+If you want to play around, please feel free to run it with the instruction under section "Usage". But if you want to use the stable version, please check the brach "stable"
 
 TODO:
-- write documentation for this project and each component
+- refactor the ZheQuant-webserver-backend so that
+    - remove the unnecessary pages
+    - create console page where user can input command and see the result
 
 ## Usage
-Please remember to use `git submodule update --init --recursive` to download submodules.
+### Prerequisits
+- install [docker](https://www.docker.com/) and docker-compose. On some platform, the docker-compose will be installed with docker engine automatically
+- git clone this repository and go to its directory
+- use `git submodule update --init --recursive` to download submodules
+### Run
+- use `docker-compose build` to build the components' images
+- use `docker-compose up -d` to run components' containers
+### Play Around
+- use `docker-compose run admin /bin/bash` to start the admin container. Then you can use `./main.py -g` to generate test data and play around. There is a user 'test' with password 'test' and some fake stock data generated. For more command, please refer to the document of [ZheQuant-admin-console](https://github.com/feng-zhe/ZheQuant-admin-console) or the `./main.py -h`.
 
 ## Technical Info
 ### Queue in Rabbitmq
