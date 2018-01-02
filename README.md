@@ -2,14 +2,14 @@
 A framework to help build analysing system
 
 ## Notice
-This project is under developing. 
+THIS PROJECT IS UNDER DEVELOPING!
 
 If you want to play around, please feel free to run it with the instruction under section "Usage". But if you want to use the stable version, please check the brach "stable"
 
 TODO:
 - refactor the ZheQuant-webserver-backend so that
-    - remove the unnecessary pages
-    - create console page where user can input command and see the result
+    - remove the frontend code
+- create python client to interact with webserver
 
 ## Usage
 ### Prerequisits
