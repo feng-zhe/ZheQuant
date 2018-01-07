@@ -1,4 +1,5 @@
 # ZheQuant
+[![Build Status](https://img.shields.io/travis/feng-zhe/ZheQuant/master.svg)](https://travis-ci.org/feng-zhe/ZheQuant)
 A framework to help build analysing system
 
 ## Notice
