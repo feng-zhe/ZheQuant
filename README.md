@@ -17,6 +17,7 @@ If you want to play around, please feel free to run it with the instruction unde
 - use `docker-compose up -d` to run components' containers
 ### Run Client
 - git clone [ZheQuant-client-python](https://github.com/feng-zhe/ZheQuant-client-python)
+- run `pipenv install`
 - run `pipenv run python main.py` or something equivalent
 - run `help <command>` to understand the usage
 ### Clean
